@@ -75,6 +75,7 @@ const addNewComponent = () => {
       resultEL.textContent = String(
         Number(resultEL.textContent) + incrementValue
       );
+      e.preventDefault();
     }
   });
 
@@ -89,6 +90,7 @@ const addNewComponent = () => {
       } else {
         resultEL.textContent = 0;
       }
+      e.preventDefault();
     }
   });
 
