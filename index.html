@@ -7,6 +7,8 @@
         <title>LWS Assignment 1 - Scoreboard</title>
         <link rel="icon" type="image/x-icon" href="./image/favicon.png" />
         <link rel="stylesheet" href="./style.css" />
+                <!-- import redux from cdn -->
+                <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
     </head>
 
     <body>
@@ -42,6 +44,7 @@
                                 type="number"
                                 name="increment"
                                 class="lws-increment"
+                                id="increment"
                             />
                         </form>
                         <form class="decrementForm">
@@ -50,11 +53,12 @@
                                 type="number"
                                 name="decrement"
                                 class="lws-decrement"
+                                id="decrement"
                             />
                         </form>
                     </div>
                     <div class="numbers">
-                        <h2 class="lws-singleResult">120</h2>
+                        <h2 class="lws-singleResult" id="result"></h2>
                     </div>
                 </div>
             </div>
@@ -87,6 +91,7 @@
 
 
 
-        <script src="./script.js"></script>
+        <!-- <script src="./script.js"></script> -->
+        <script src="./test.js"></script>
     </body>
 </html>
